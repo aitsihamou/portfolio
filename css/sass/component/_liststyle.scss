@@ -1,0 +1,23 @@
+.list {
+    .list-item {
+        font-size: 20px;
+        display: inline-block;
+        margin: 5px;
+        padding: 5px 15px;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .list-icons {
+        display: inline-block;
+        border-radius: 50%;
+        border: 2px solid white;
+        padding: 5px;
+        i {
+            color: white;
+            font-size: 25px;
+            margin: 5px;
+        }
+    }
+}
+
+

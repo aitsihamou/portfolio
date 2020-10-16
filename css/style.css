@@ -1,0 +1,159 @@
+.title {
+  text-align: center;
+  margin: 20px; }
+  .title h1 {
+    font-size: 70px; }
+  .title p {
+    font-size: 50px; }
+
+.list .list-item {
+  font-size: 20px;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  text-align: center; }
+.list .list-icons {
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 5px; }
+  .list .list-icons i {
+    color: white;
+    font-size: 25px;
+    margin: 5px; }
+
+.navbar {
+  background-color: #007554; }
+
+.navbar .nav-item .nav-link {
+  color: white;
+  font-size: 30px;
+  margin-right: 10px; }
+
+.logo a {
+  border: 3px solid white;
+  border-radius: 50%;
+  text-align: center; }
+
+.navbar-brand {
+  padding: 3px; }
+
+.navbar-collapse {
+  float: right; }
+
+.intro {
+  min-height: 600px;
+  background-color: #005860; }
+  .intro .intro-img img {
+    border: 5px solid rgba(255, 255, 255, 0.247);
+    border-radius: 50%; }
+  .intro .title {
+    color: white; }
+  .intro .list .list-item {
+    background-color: white;
+    color: #005860;
+    border: 2px solid white; }
+    .intro .list .list-item:hover {
+      background-color: #005860;
+      color: white;
+      border: 2px solid white; }
+
+.services {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .services .title {
+    color: #005860; }
+  .services .card {
+    border-radius: 20px;
+    text-align: center; }
+    .services .card .card-header {
+      color: white;
+      font-size: 25px;
+      border-radius: 20px 20px 0px 0px; }
+    .services .card .card-body {
+      padding: 30px; }
+      .services .card .card-body .list .list-item {
+        background-color: #005860;
+        color: white;
+        border: 2px solid #005860;
+        font-size: 20px !important; }
+        .services .card .card-body .list .list-item:hover {
+          background-color: white;
+          color: #005860;
+          border: 2px solid #005860; }
+
+.portfolio {
+  background-color: #005860;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .portfolio .title {
+    color: white; }
+  .portfolio .list .active {
+    background-color: #005860 !important;
+    color: white !important; }
+  .portfolio .list .list-item {
+    background-color: white;
+    color: #005860;
+    border: 2px solid white; }
+    .portfolio .list .list-item:hover {
+      background-color: #005860;
+      color: white;
+      border: 2px solid white; }
+  .portfolio .list .disabled {
+    pointer-events: none;
+    opacity: 0.2; }
+  .portfolio .projects .card-group .card {
+    border-radius: 25px; }
+    .portfolio .projects .card-group .card .card-img-top {
+      border-radius: 25px 25px 0px 0px;
+      width: 100%; }
+    .portfolio .projects .card-group .card .card-body .card-title {
+      color: #005860; }
+    .portfolio .projects .card-group .card .card-body .card-tech .list-item {
+      background-color: #005860;
+      color: white;
+      border: 2px solid #005860;
+      font-size: 15px; }
+      .portfolio .projects .card-group .card .card-body .card-tech .list-item:hover {
+        background-color: white;
+        color: #005860;
+        border: 2px solid #005860; }
+    .portfolio .projects .card-group .card .card-body .livepreview a {
+      text-decoration: none;
+      background-color: white;
+      color: #005860;
+      border: 2px solid white;
+      font-size: 20px;
+      padding: 5px 15px;
+      border-radius: 15px; }
+      .portfolio .projects .card-group .card .card-body .livepreview a:hover {
+        background-color: #005860;
+        color: white;
+        border: 2px solid white; }
+
+.footer {
+  text-align: center; }
+  .footer .title {
+    color: #005860; }
+  .footer .separator {
+    border-bottom: 1px solid #005860;
+    padding: 5px; }
+    .footer .separator i {
+      font-size: 50px;
+      color: #007554; }
+  .footer .row p {
+    font-size: 15px;
+    color: #005860; }
+    .footer .row p a {
+      margin-right: 5px; }
+      .footer .row p a span {
+        text-decoration: none;
+        color: #005860; }
+    .footer .row p i {
+      color: #005860 !important;
+      margin-right: 5px;
+      background-color: white;
+      border-radius: 50%;
+      border: 2px solid #005860;
+      padding: 5px; }

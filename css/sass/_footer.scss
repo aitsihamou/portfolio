@@ -1,0 +1,36 @@
+.footer {
+    text-align: center;
+    .title {
+        @include title-colors($light-theme: true);
+    }
+    .separator {
+        border-bottom: 1px solid $colorS;
+        padding: 5px;
+        i {
+            font-size: 50px;
+            color: $colorP;
+            
+        }
+    }
+    .row {
+        p {
+            font-size: 15px;
+            color: $colorS;
+            a {
+                margin-right: 5px;
+                span {
+                text-decoration: none;
+                color : $colorS ;
+                
+            }}
+            i {
+                color: $colorS !important;
+                margin-right: 5px;
+                background-color: white;
+                border-radius: 50%;
+                border: 2px solid $colorS;
+                padding: 5px;
+            }
+        }
+    }
+}

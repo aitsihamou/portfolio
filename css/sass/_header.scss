@@ -1,0 +1,14 @@
+.intro {
+    min-height: 600px;
+    background-color: $colorS;
+    .intro-img   img {
+        border: 5px solid rgba(255, 255, 255, 0.247);
+        border-radius: 50%;
+    }
+    .title {
+        @include title-colors($light-theme: false);
+    }
+    .list .list-item {
+        @include list-colors($light-theme: true);
+    }
+ }
