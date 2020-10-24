@@ -1,0 +1,35 @@
+.aboutus {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    .info {
+        .title {
+            @include title-colors($light-theme: true);
+            @media #{$minSmall} {
+                text-align: left !important;
+            }
+        }
+        .descr {
+            font-family: cursive;
+            border-left: 3px solid coral;
+            padding-left: 15px ;
+            h1,
+            h2 {
+                color: $colorP;
+            }
+            P,
+            li {
+                font-size: 20px;
+                color: $colorS;
+            }
+        }
+    }
+    .backimg {
+        img {
+            border: 5px solid coral;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            height: 350px;
+            width: 100%;
+            padding: 10px;
+        }
+    }
+}

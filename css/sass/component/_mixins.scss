@@ -33,3 +33,26 @@ $dark-text: white;
         color: $dark-text;
     }
 }
+// color icons
+@mixin icons-colors($color1 , $color2) {
+   
+        color: $color1;
+        a {
+            color: $color1;
+        }
+        i {
+            border: 2px solid $color1;
+        }
+        &:hover {
+            
+        a {
+            color: $color1;
+        }
+        i {
+            color: $color2;
+            border: 2px solid $color2;
+            background-color: $color1;
+        }
+        }
+  
+}

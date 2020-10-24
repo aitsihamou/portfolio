@@ -1,23 +1,36 @@
 .list {
+    text-align: center;
+    margin: auto;
     .list-item {
         font-size: 20px;
-        display: inline-block;
         margin: 5px;
         padding: 5px 15px;
         border-radius: 20px;
-        text-align: center;
-    }
-    .list-icons {
         display: inline-block;
-        border-radius: 50%;
-        border: 2px solid white;
-        padding: 5px;
         i {
             color: white;
             font-size: 25px;
             margin: 5px;
         }
     }
+
+    .list-icons {
+        font-size: 15px;
+        @media #{$maxMobile} {
+            display: block;
+        }
+        @media #{$minSmall} {
+            display: inline-block;
+        } 
+        a {
+            text-decoration: none;
+        }
+            i {
+                padding: 5px;
+                border-radius: 50%;
+                margin-right: 5px;
+                font-size: 20px;
+            }
+        
+    }
 }
-
-

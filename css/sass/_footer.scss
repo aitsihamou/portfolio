@@ -3,34 +3,19 @@
     .title {
         @include title-colors($light-theme: true);
     }
-    .separator {
-        border-bottom: 1px solid $colorS;
-        padding: 5px;
-        i {
-            font-size: 50px;
-            color: $colorP;
-            
+    .list-icons {
+        margin : 15px ;
+        @include icons-colors($colorS , white);
+        @media #{$minMeduim} {
+            padding-right: 5px;
+            margin-right: 10px;
         }
+       
     }
-    .row {
+    .copyright {
+        border-top: 1px solid grey;
         p {
-            font-size: 15px;
-            color: $colorS;
-            a {
-                margin-right: 5px;
-                span {
-                text-decoration: none;
-                color : $colorS ;
-                
-            }}
-            i {
-                color: $colorS !important;
-                margin-right: 5px;
-                background-color: white;
-                border-radius: 50%;
-                border: 2px solid $colorS;
-                padding: 5px;
-            }
+            color: grey;
         }
     }
 }

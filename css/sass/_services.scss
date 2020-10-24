@@ -1,24 +1,23 @@
 .services {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    .title {
-        @include title-colors($light-theme: true);
-    }
-    .card {
-        border-radius: 20px;
-        text-align: center;
-
-        .card-header {
-            color: white;
-            font-size: 25px;
-            border-radius: 20px 20px 0px 0px;
-        }
-        .card-body {
-            padding: 30px;
-            .list .list-item {
-                @include list-colors($light-theme: false);
-                font-size: 20px !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .tech {
+        font-size: 30px;
+        font-weight: 400;
+        color: white;
+        .title {
+            @include title-colors($light-theme: true);
+            P {
+                font-size: 35px !important;
             }
+        }
+    }
+    .backimg {
+        img {
+            border: 5px solid rgb(104, 235, 104);
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            width: 100%;
+            padding: 10px;
         }
     }
 }
