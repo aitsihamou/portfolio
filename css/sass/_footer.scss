@@ -2,20 +2,19 @@
     text-align: center;
     .title {
         @include title-colors($light-theme: true);
-    }
-    .list-icons {
-        margin : 15px ;
-        @include icons-colors($colorS , white);
-        @media #{$minMeduim} {
-            padding-right: 5px;
-            margin-right: 10px;
-        }
-       
+        margin: 0px;
+        //background: linear-gradient(to right, #f15bb5, #fee440);
+         background:linear-gradient(to right,#F11A5F  0%, #FF4800 100%) ;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
     }
     .copyright {
         border-top: 1px solid grey;
         p {
             color: grey;
+            padding: 5px;
+            margin: 0px;
         }
     }
 }

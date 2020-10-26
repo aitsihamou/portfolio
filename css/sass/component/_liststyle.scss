@@ -3,8 +3,8 @@
     margin: auto;
     .list-item {
         font-size: 20px;
-        margin: 5px;
-        padding: 5px 15px;
+        margin: 3px;
+        padding: 4px 6px;
         border-radius: 20px;
         display: inline-block;
         i {
@@ -16,12 +16,7 @@
 
     .list-icons {
         font-size: 15px;
-        @media #{$maxMobile} {
-            display: block;
-        }
-        @media #{$minSmall} {
-            display: inline-block;
-        } 
+        display: inline-block; 
         a {
             text-decoration: none;
         }

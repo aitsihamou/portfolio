@@ -2,6 +2,10 @@
     background-color: $colorS;
     padding-top: 30px;
     padding-bottom: 30px;
+    .disabled {
+        pointer-events: none; //This makes it not clickable
+        opacity: 0.2; //This grays it out to look disabled
+    }
     .title {
         @include title-colors($light-theme: false);
     }
@@ -13,40 +17,48 @@
         .list-item {
             @include list-colors($light-theme: true);
         }
-        .disabled {
-            pointer-events:none; //This makes it not clickable
-            opacity:0.2;         //This grays it out to look disabled
-        }
     }
     .projects {
-        .card-group {
-            .card {
-                border-radius: 25px;
-                .card-img-top {
-                    border-radius: 25px 25px 0px 0px;
-                    width: 100%;
-                }
-                .card-body {
-                    .card-title {
-                        color: $colorS;
-                    }
-                    .card-tech {
-                        margin-bottom: 10px;
-                        .list-item {
-                            @include list-colors($light-theme: false);
-                            font-size: 15px;
-                        }
-                    }
-                    .livepreview {
-                        a {
-                            text-decoration: none;
-                            @include list-colors($light-theme: true);
-                            font-size: 20px;
-                            padding: 5px 15px;
-                            border-radius: 15px;
-                        }
-                    }
-                }
+        .project {
+            position: relative;
+            width: 100%;
+            .image {
+                opacity: 1;
+                display: block;
+                height: 250px;
+                width: 100%;
+                transition: 0.5s ease;
+                backface-visibility: hidden;
+                border-radius: 20px;
+            }
+
+            .middle {
+                transition: 0.5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+            }
+
+            &:hover .image {
+                opacity: 0.3;
+            }
+
+            &:hover .middle {
+                opacity: 1;
+            }
+
+            .text a {
+                text-decoration: none;
+                background-color: white;
+                border-radius: 20px;
+                color: $colorS;
+                font-size: 15px;
+                padding: 15px 25px;
+                
             }
         }
     }

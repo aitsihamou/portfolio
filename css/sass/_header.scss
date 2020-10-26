@@ -2,7 +2,10 @@
     min-height: 600px;
     background-color: $colorS;
     .intro-img img {
-        border: 5px solid $colorP;
+        //background:linear-gradient(to right,#F11A5F  0%, #FF4800 100%) ;
+        background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) ;
+        border: 5px solid white;
+        padding: 10px;
         border-radius: 50%;
         height: 350px;
         width: 350px;
@@ -10,17 +13,10 @@
     .title {
         @include title-colors($light-theme: false);
     }
-    .list .list-item {
-        @include list-colors($light-theme: true);
+    P{
+        font-size: 25px;
+        color : white;
+        font-family: Courier New;
     }
-    .list-icons {
-        @include icons-colors(white , $colorS);
-        @media #{$maxMobile} {
-            display: inline-block !important;
-        }
-        i {
-            font-size: 30px !important;
-            padding: 10px !important;
-        }
-    }
+    
 }
