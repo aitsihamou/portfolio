@@ -1,16 +1,23 @@
 .navbar  {
-    
     background-color:$colorP;
 }
 .navbar .nav-item  .nav-link  {
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     margin-right: 10px;
+    &:hover {
+        color : #E76F51 ;
+    }
+
 }
 .logo a {
-    border: 3px solid white;
+    border: 3px solid #E76F51;
     border-radius: 50%;
     text-align: center;
+    &:hover {
+        border: 3px solid white;
+        i { color : #E76F51 ;}
+    }
 }
 .navbar-brand { padding: 3px;}
 .navbar-collapse {

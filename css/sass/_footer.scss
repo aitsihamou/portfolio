@@ -10,9 +10,10 @@
         font-weight: 600;
     }
     .copyright {
-        border-top: 1px solid grey;
+        background-color: $colorP;
+        
         p {
-            color: grey;
+            color: white;
             padding: 5px;
             margin: 0px;
         }

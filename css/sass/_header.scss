@@ -2,21 +2,23 @@
     min-height: 600px;
     background-color: $colorS;
     .intro-img img {
-        //background:linear-gradient(to right,#F11A5F  0%, #FF4800 100%) ;
-        background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) ;
+        background: conic-gradient(red, blue, magenta, yellow, lime, aqua, red);
         border: 5px solid white;
-        padding: 10px;
-        border-radius: 50%;
-        height: 350px;
-        width: 350px;
+        padding: 5px;
+        @media (max-width: 767px) {
+            height: 350px;
+            width: 350px;
+        }
+        height: 500px;
+        width: 500px;
     }
     .title {
         @include title-colors($light-theme: false);
+
+        P {
+            font-size: 25px;
+            color: white;
+            font-family: Courier New;
+        }
     }
-    P{
-        font-size: 25px;
-        color : white;
-        font-family: Courier New;
-    }
-    
 }

@@ -8,20 +8,20 @@ $dark-text: white;
     @if $light-theme {
         background-color: $light-background;
         color: $light-text;
-        border: 2px solid $light-background;
+        border: 2px solid $dark-background;
         &:hover {
             background-color: $dark-background;
             color: $dark-text;
-            border: 2px solid $dark-text;
+            border: 2px solid $light-background;
         }
     } @else {
         background-color: $dark-background;
         color: $dark-text;
-        border: 2px solid $dark-background;
+        border: 2px solid $light-background;
         &:hover {
             background-color: $light-background;
             color: $light-text;
-            border: 2px solid $light-text;
+            border: 2px solid $dark-background;
         }
     }
 }

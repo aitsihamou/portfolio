@@ -17,7 +17,7 @@
   .list .list-item {
     font-size: 20px;
     margin: 3px;
-    padding: 4px 6px;
+    padding: 4px;
     border-radius: 20px;
     display: inline-block; }
     .list .list-item i {
@@ -36,17 +36,23 @@
       font-size: 20px; }
 
 .navbar {
-  background-color: #007554; }
+  background-color: #264653; }
 
 .navbar .nav-item .nav-link {
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   margin-right: 10px; }
+  .navbar .nav-item .nav-link:hover {
+    color: #E76F51; }
 
 .logo a {
-  border: 3px solid white;
+  border: 3px solid #E76F51;
   border-radius: 50%;
   text-align: center; }
+  .logo a:hover {
+    border: 3px solid white; }
+    .logo a:hover i {
+      color: #E76F51; }
 
 .navbar-brand {
   padding: 3px; }
@@ -56,65 +62,56 @@
 
 .intro {
   min-height: 600px;
-  background-color: #005860; }
+  background-color: #2A9D8F; }
   .intro .intro-img img {
-    background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
+    background: conic-gradient(red, blue, magenta, yellow, lime, aqua, red);
     border: 5px solid white;
-    padding: 10px;
-    border-radius: 50%;
-    height: 350px;
-    width: 350px; }
+    padding: 5px;
+    height: 500px;
+    width: 500px; }
+    @media (max-width: 767px) {
+      .intro .intro-img img {
+        height: 350px;
+        width: 350px; } }
   .intro .title {
     color: white; }
-  .intro P {
-    font-size: 25px;
-    color: white;
-    font-family: Courier New; }
+    .intro .title P {
+      font-size: 25px;
+      color: white;
+      font-family: Courier New; }
 
 .about {
   padding-top: 20px;
   padding-bottom: 20px; }
+  .about .container {
+    padding: 10px; }
   .about .info .card {
-    text-align: center;
+    border: 3px solid;
+    border-image: conic-gradient(white, #2A9D8F, white, orange, white, #2A9D8F, white, orange, white) 1;
+    padding: 15px;
     font-family: arial;
-    max-width: 400px;
-    border: 2px solid;
-    border-image: conic-gradient(white, #007554, white, orange, white, #007554, white, orange, white) 1; }
+    max-width: 400px; }
     .about .info .card .cardimg img {
       height: 200px;
       width: 200px;
       padding: 5px;
       border-radius: 50%;
-      border: 3px solid #007554; }
+      border: 3px solid #264653; }
     .about .info .card .degree {
-      color: #005860;
+      color: #2A9D8F;
       font-size: 25px; }
-    .about .info .card button {
-      border: none;
-      outline: 0;
-      display: inline-block;
-      padding: 8px;
-      color: white;
-      background-color: #000;
-      text-align: center;
-      cursor: pointer;
-      width: 100%;
-      font-size: 18px; }
-      .about .info .card button a {
-        text-decoration: none;
-        color: white; }
     .about .info .card .list-icons {
-      color: #005860; }
+      color: #2A9D8F; }
       .about .info .card .list-icons a {
-        color: #005860; }
+        color: #2A9D8F; }
       .about .info .card .list-icons i {
-        border: 2px solid #005860; }
+        border: 2px solid #2A9D8F; }
       .about .info .card .list-icons:hover a {
-        color: #005860; }
+        color: #2A9D8F; }
       .about .info .card .list-icons:hover i {
         color: white;
         border: 2px solid white;
-        background-color: #005860; }
+        background-color: #2A9D8F; }
   .about .tech {
     font-size: 20px;
     font-weight: 400;
@@ -123,10 +120,10 @@
       border-radius: 20px; }
     .about .tech p {
       font-size: 40px;
-      color: #005860; }
+      color: #2A9D8F; }
 
 .portfolio {
-  background-color: #005860;
+  background-color: #2A9D8F;
   padding-top: 30px;
   padding-bottom: 30px; }
   .portfolio .disabled {
@@ -135,29 +132,26 @@
   .portfolio .title {
     color: white; }
   .portfolio .list .active {
-    background-color: #005860 !important;
+    background-color: #e76f51 !important;
     color: white !important; }
   .portfolio .list .list-item {
     background-color: white;
-    color: #005860;
-    border: 2px solid white; }
+    color: #2A9D8F;
+    border: 2px solid #2A9D8F; }
     .portfolio .list .list-item:hover {
-      background-color: #005860;
+      background-color: #2A9D8F;
       color: white;
       border: 2px solid white; }
   .portfolio .projects .project {
-    position: relative;
-    width: 100%; }
+    width: 100%;
+    border-radius: 20px;
+    background-color: #e76f51; }
     .portfolio .projects .project .image {
       opacity: 1;
-      display: block;
       height: 250px;
       width: 100%;
-      transition: 0.5s ease;
-      backface-visibility: hidden;
       border-radius: 20px; }
     .portfolio .projects .project .middle {
-      transition: 0.5s ease;
       opacity: 0;
       position: absolute;
       top: 50%;
@@ -166,29 +160,29 @@
       -ms-transform: translate(-50%, -50%);
       text-align: center; }
     .portfolio .projects .project:hover .image {
-      opacity: 0.3; }
+      opacity: 0; }
     .portfolio .projects .project:hover .middle {
       opacity: 1; }
-    .portfolio .projects .project .text a {
-      text-decoration: none;
-      background-color: white;
-      border-radius: 20px;
-      color: #005860;
-      font-size: 15px;
-      padding: 15px 25px; }
+    .portfolio .projects .project .text i {
+      color: white;
+      opacity: .5;
+      transition: all .2s ease-in-out; }
+      .portfolio .projects .project .text i:hover {
+        opacity: 1;
+        transform: scale(1.2); }
 
 .footer {
   text-align: center; }
   .footer .title {
-    color: #005860;
+    color: #2A9D8F;
     margin: 0px;
     background: linear-gradient(to right, #F11A5F 0%, #FF4800 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600; }
   .footer .copyright {
-    border-top: 1px solid grey; }
+    background-color: #264653; }
     .footer .copyright p {
-      color: grey;
+      color: white;
       padding: 5px;
       margin: 0px; }

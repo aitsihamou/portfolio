@@ -1,14 +1,19 @@
 .about {
     padding-top: 20px;
     padding-bottom: 20px;
+    .container {
+        padding: 10px;
+        
+    }
   .info {
-      
+  
     .card {
-        text-align: center;
+        border: 3px solid;
+        border-image: conic-gradient(white ,$colorS, white, orange, white, $colorS,white, orange,white) 1;
+        padding: 15px;
         font-family: arial;
         max-width: 400px;
-        border: 2px solid;
-        border-image: conic-gradient(white ,$colorP, white, orange, white, $colorP,white, orange,white) 1;
+        
         .cardimg {
             
             img {
@@ -25,22 +30,7 @@
             font-size: 25px;
         }
 
-        button {
-            border: none;
-            outline: 0;
-            display: inline-block;
-            padding: 8px;
-            color: white;
-            background-color: #000;
-            text-align: center;
-            cursor: pointer;
-            width: 100%;
-            font-size: 18px;
-            a{
-                text-decoration: none;
-                color: white ;
-            }
-        }
+
         .list-icons {
             @include icons-colors($colorS , white);
         }
@@ -51,6 +41,7 @@
         font-size: 20px;
         font-weight: 400;
         color: white;
+        
         .col {
             border-radius: 20px;
         }
