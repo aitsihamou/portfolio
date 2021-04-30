@@ -3,7 +3,7 @@
     background-color: $colorS;
     .intro-img img {
         background: conic-gradient(red, blue, magenta, yellow, lime, aqua, red);
-        border: 5px solid white;
+        border: 6px solid white;
         padding: 5px;
         @media (max-width: 767px) {
             height: 350px;
