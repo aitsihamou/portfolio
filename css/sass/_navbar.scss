@@ -1,25 +1,28 @@
-.navbar  {
-    background-color:$colorP;
+.navbar {
+    background-color: $colorP;
 }
-.navbar .nav-item  .nav-link  {
+.navbar .nav-item .nav-link {
     color: white;
     font-size: 25px;
     margin-right: 10px;
     &:hover {
-        color : #E76F51 ;
+        color: $colorO;
     }
-
 }
 .logo a {
-    border: 3px solid #E76F51;
+    border: 3px solid $colorO;
     border-radius: 50%;
     text-align: center;
     &:hover {
         border: 3px solid white;
-        i { color : #E76F51 ;}
+        i {
+            color: $colorO;
+        }
     }
 }
-.navbar-brand { padding: 3px;}
+.navbar-brand {
+    padding: 3px;
+}
 .navbar-collapse {
     float: right;
 }

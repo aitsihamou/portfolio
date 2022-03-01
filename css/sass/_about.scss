@@ -1,53 +1,179 @@
 .about {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-block: 40px;
     .container {
-        padding: 10px;
-        
-    }
-  .info {
-  
-    .card {
-        border: 3px solid;
-        border-image: conic-gradient(white ,$colorS, white, orange, white, $colorS,white, orange,white) 1;
-        padding: 15px;
-        font-family: arial;
-        max-width: 400px;
-        
-        .cardimg {
+        h3 {
+            font-size: 70px;
+            font-weight: 400;
+            padding: 15px;
+            color: $colorO;
+            font-family: cursive;
+            border-bottom: 5px solid $colorS;
             
-            img {
-                height: 200px;
-                width: 200px;
-                padding: 5px;
-                border-radius: 50%;
-                border: 3px solid $colorP;
+            i {
+                font-size: 50px;
             }
         }
-
-        .degree {
-            color: $colorS;
-            font-size: 25px;
+        @media #{$maxMobile} {
+            h3 {
+                margin: auto;
+                font-size: 50px;
+                margin-bottom: 20px;
+                i {
+                    display: none;
+                }
+            }
         }
-
-
-        .list-icons {
-            @include icons-colors($colorS , white);
+        @media #{$maxSmall} {
+              h3 {
+                font-size: 30px;
+                i {
+                    font-size: 25px;
+                    
+                }
+            }
         }
-    }
-  }
-
-    .tech {
-        font-size: 20px;
-        font-weight: 400;
-        color: white;
-        
-        .col {
-            border-radius: 20px;
+        .iam {
+            margin-block: 50px;
+            h3 {
+                i {
+                    margin-left: 40px;
+                    @media #{$maxSmall} {margin-left: 20px;}
+                }
+            }
+            .me {
+                border-right: 2px solid $colorO;
+                .cardimg {
+                   text-align: center;
+                   
+                    img {
+                        height: 150px;
+                        width: 150px;
+                        border-radius: 50%;
+                        border: 3px solid $colorO;
+                        padding: 5px;
+                    }
+                }
+                .links {
+                    text-align: center;
+                    margin-right: 15px;
+                    h4 {
+                        font-size: 35px;
+                        color: $colorP;
+                        margin-bottom: 0px;
+                    }
+                    span{
+                        font-size: 20px;
+                        color: $colorP;
+                        i{
+                            margin-right: 5px;
+                        }
+                    }
+                    ul {
+                        margin-top: 5px;
+                        li {
+                            display: inline-block;
+                            padding: 8px;
+                            border-radius: 50%;
+                            margin-right: 5px;
+                            &:hover {
+                                background-color: white !important;
+                                padding: 6px;
+                                border: 2px solid $colorS;
+                                i {
+                                    color: $colorS !important;
+                                }
+                            }
+                            i {
+                                color: white;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            @media #{$maxMobile} {
+                margin-block: 20px;
+                .me {
+                    .cardimg {
+                    }
+                    .links {
+                    }
+                }
+            }
         }
-        p {
-            font-size: 40px;
-            color: $colorS;
+        .education {
+            margin-block: 100px;
+            .degr {
+                border-left: 2px solid $colorO;
+                .grade {
+                    .title {
+                        background-color: #f1f1e6;
+                        margin-block: 5px;
+                        min-width: 350px;
+                        border-radius: 30px;
+                        i {
+                            font-size: 30px;
+                            color: white;
+                            margin-right: 10px;
+                            border-radius: 50%;
+                            padding: 10px;
+                        }
+                        .nn {
+                            font-size: 25px;
+                            color: $colorP;
+                        }
+                    }
+                }
+            }
+            h3 {
+                i {
+                    margin-right: 40px;
+                    @media #{$maxSmall} {margin-right: 20px;}
+                }
+            }
+            @media #{$maxMobile} {
+                flex-direction: column-reverse;
+                margin-block: 40px;
+                .degr {
+                }
+                h3 {
+                }
+            }
+        }
+        .skills {
+            margin-block: 50px;
+            h3 {
+                @media #{$maxSmall} {
+                    padding-inline: 0px;
+                    i{
+                        margin-left: 20px;
+                    }
+                }
+                i {
+                    margin-left: 40px;
+                    @media #{$maxSmall} {margin-left: 20px;}
+                }
+            }
+            .tech {
+                border-right: 2px solid $colorO;
+                ul {
+                    text-align: center;
+                    margin: 0px;
+                    li {
+                        color: white;
+                        padding: 4px;
+                        border: 3px solid white;
+                    }
+                }
+            }
+            @media #{$maxMobile} {
+                .tech {
+                    div {
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+                }
+            }
         }
     }
 }

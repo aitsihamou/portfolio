@@ -2,7 +2,7 @@
     min-height: 600px;
     background-color: $colorS;
     .intro-img img {
-        background: conic-gradient(red, blue, magenta, yellow, lime, aqua, red);
+        background-color: $colorO;
         border: 6px solid white;
         padding: 5px;
         @media (max-width: 767px) {
@@ -13,8 +13,11 @@
         width: 500px;
     }
     .title {
-        @include title-colors($light-theme: false);
-
+        color: white;
+        h1 {
+            font-family: cursive;
+            font-size: 60px;
+        }
         P {
             font-size: 25px;
             color: white;

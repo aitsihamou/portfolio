@@ -10,7 +10,7 @@
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/sass/global.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -34,7 +34,7 @@
           <a class="nav-link" href="#portfolio">PORTFOLIO</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">GET-TOUCH</a>
+          <a class="nav-link" href="#touch">GET-TOUCH</a>
         </li>
       </ul>
     </div>
@@ -49,7 +49,7 @@
       </div>
       <div class="title mt-2">
         <h1>Frontend developer</h1>
-      <p>website creator and web application</p>
+        <p>website creator and web application</p>
       </div>
     </div>
   </header>
@@ -58,43 +58,63 @@
   <!--/.section about -->
   <section class="about">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="info col-12 col-sm pl-sm-5">
-          <div class="card align-items-center" id="contact">
-            <div class="cardimg mt-1"> <img src="img/nash.jpg" alt=""></div>
-            <h2>Nourddine Ash</h2>
-            <button class="btn btn-lg mb-2"><i class="fa fa-graduation-cap mr-2"></i>Software Engineer</button>
-            <button class="btn mb-2"><i class="fa fa-graduation-cap mr-2"></i>technician network</button>
-            <p>nourddine.ash@gmail.com</p>
-            <p>+212-6157807-93</p>
+      <div class="row iam">
+        <div class="col-12 col-md-4  col-lg-6 d-flex align-items-center">
+          <h3>Who am i<i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
+        </div>
+        <div class="col-12 col-md-8  col-lg-6 me d-sm-flex flex-sm-row-reverse align-items-sm-center">
+          <div class="cardimg mt-1"> <img src="img/nash.jpg" alt=""></div>
+          <div class="links ml-3">
+            <h4>Nourddine Ash</h4>
+            <span><i class="fa fa-map-marker" aria-hidden="true"></i>morocco</span>
             <ul class=" list list-unstyled mb-1">
-              <li class="list-icons"><a href="https://github.com/aitsihamou"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-              <li class="list-icons"><a href="https://www.linkedin.com/in/ashnourddine/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-              <li class="list-icons"> <a href="img/CV-FE-NOURDDINE AITSIHAMOU.pdf"><i class="fa fa-cloud-download"></i></a></li>
+              <li class="listicons bg-secondary" data-bs-placement="bottom" title="github"><a
+                  href="https://github.com/aitsihamou"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+              <li class="listicons bg-primary" data-bs-placement="bottom" title="linkedin"><a
+                  href="https://www.linkedin.com/in/ashnourddine/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              </li>
+              <li class="listicons bg-success data-bs-placement=" bottom" title="cv""> <a href=" img/CV-FE-NOURDDINE
+                AITSIHAMOU.pdf"><i class="fa fa-cloud-download"></i></a></li>
+
             </ul>
           </div>
         </div>
-        <div class="col-12 col-sm text-center">
-          <div class="tech">
-            <p class=" border-bottom ">TECHNOLOGY</p>
-            <div class="row mb-3">
-              <div class="col bg-success mr-2 p-2 mb-2">html5</div>
-              <div class="col bg-info mr-2 mb-2 p-2">css3</div>
-              <div class="col bg-warning mb-2 p-2">js</div>
-            </div>
-            <div class="row mb-3">
-              <div class="col  bg-info mb-2 mr-2 p-2">bootstrap</div>
-              <div class="col  bg-info mb-2 mr-2 p-2">sass</div>
-              <div class="col bg-success mb-2  mr-2 p-2">pugjs</div>
-              <div class="col bg-danger mb-2 p-2">angular</div>
-            </div>
-            <div class="row mb-3">
-              <div class="col bg-primary mr-2 p-2 mb-2">Git</div>
-              <div class="col bg-warning mr-2 mb-2 p-2">Github</div>
-            </div>
-            <div class="row mb-3">
-              <div class="col bg-primary mr-2 p-2 mb-2">Docker</div>
-            </div>
+      </div>
+      <div class="row education">
+        <div class="col-12 col-sm-6 degr d-flex align-items-center ">
+          <div class="grade">
+            <div class="title"><i class="fa fa-graduation-cap mr-2 bg-success"></i><span class="nn">Software
+                Engineer</span></div>
+            <div class="title"><i class="fa fa-graduation-cap mr-2 bg-info"></i><span class="nn">Technician
+                Network</span></div>
+            <div class="title"><i class="fa fa-graduation-cap mr-2 bg-danger"></i><span class="nn">Bachelor's
+                degree</span></div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 d-flex align-items-center justify-content-end">
+          <h3><i class="fa fa-chevron-left" aria-hidden="true"></i>Education</h3>
+        </div>
+      </div>
+      <div class="row skills">
+        <div class="col-12 col-md-4  col-lg-6 d-flex align-items-center">
+          <h3>Technology<i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
+        </div>
+        <div class="col-12 col-md-8  col-lg-6 tech ">
+          <div class="">
+            <ul class="list  list-unstyled row ">
+              <li class="col-6 col-sm-3 bg-success list-item">HTML</li>
+              <li class="col-6 col-sm-3 bg-info list-item">CSS</li>
+              <li class="col-6 col-sm-3 bg-danger list-item ">JS</li>
+              <li class="col-6 col-sm-3 bg-warning list-item ">Jquery</li>
+              <li class="col-12 col-sm-3  bg-info list-item">BOOTSTRAP</li>
+              <li class="col-6 col-sm-3  bg-danger list-item ">PUGJS</li>
+              <li class="col-6 col-sm-3 bg-info list-item">SASS</li>
+              <li class="col-12 col-sm-3 bg-danger list-item ">ANGLUAR</li>
+              <li class="col-6 col-sm-6 bg-success list-item">GIT</li>
+              <li class="col-6 col-sm-6  bg-warning list-item">GITHUB</li>
+              <li class="col-12 col-sm-12 bg-primary list-item">DOCKER</li>
+              <li class="col-12 col-sm-12 bg-danger list-item">NETWORK & SYSTEMS</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -103,126 +123,110 @@
   <!--/.end section about -->
 
   <!--/.section portfolio -->
-  <div class="portfolio" id="portfolio">
+  <section class="portfolio" id="portfolio">
     <div class="container">
       <div class="title">
         <p>Portfolio</p>
       </div>
       <div class="mb-4">
-        <ul class="list list-unstyled row">
+        <ul class="list list-unstyled row d-flex justify-content-center">
           <li data-class="All" class="col-sm-12 col-lg active list-item">All</li>
-          <li data-class=".native" class="col-5 col-sm  list-item">html/css</li>
-          <li data-class=".sass" class="col-5 col-sm list-item">sass</li>
           <li data-class=".bootstrap" class="col-5 col-sm list-item">bootstrap</li>
           <li data-class=".js" class="col-5 col-sm list-item ">JS-Jquery</li>
+          <li data-class=".native" class="col-5 col-sm  list-item">html/css</li>
+          <li data-class=".sass" class="col-5 col-sm list-item">sass</li>
           <li data-class=".angular" class="col-5 col-sm  list-item disabled">angular</li>
         </ul>
       </div>
-      <div class="projects">
-        <div class="row">
-          <!--/.col project -->
-          <div class="col-12 col-sm-6 col-md-4 mb-3">
-            <div class="project bootstrap native">
-              <img src="img/featured/bootstrap4_page.png" alt="bootstrap" class="image">
-              <div class="middle">
-                <div class="text">
-                  <a href="https://aitsihamou.github.io/bootstrap_template/"><i class="fa fa-external-link-square fa-5x"></i>
-                  </a>
-                  
-                </div>
-              </div>
-            </div>
+      <div class="projects row">
+        <div class="box all sass native col-12  col-sm-4">
+          <div class="pic pic1"></div>
+          <div class="middle">
+            <a href="https://aitsihamou.github.io/pictures/" target="_blank">LivePreview</a>
           </div>
-          <!--/.col project -->
-          <!--/.col project -->
-          <div class="col-12 col-sm-6 col-md-4 mb-3">
-            <div class="project sass">
-              <img src="img/featured/sass_page.png" alt="bootstrap" class="image">
-              <div class="middle">
-                <div class="text">
-                  <a href="https://aitsihamou.github.io/template_SASS/"><i class="fa fa-external-link-square fa-5x"></i>
-                  </a>
-                  
-                </div>
-              </div>
-            </div>
+        </div>
+        <div class="box bootstrap col-12  col-sm-4">
+          <div class="pic pic2"></div>
+          <div class="middle">
+            <a href="https://aitsihamou.github.io/bootstrap_template/" target="_blank">LivePreview</a>
           </div>
-          <!--/.col project -->
-          <!--/.col project -->
-          <div class="col-12 col-sm-6 col-md-4 mb-3">
-            <div class="project js">
-              <img src="img/featured/js_page.png" alt="js jsquery" class="image">
-              <div class="middle">
-                <div class="text">
-                  <a href="https://aitsihamou.github.io/JS-training/"><i class="fa fa-external-link-square fa-5x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+        </div>
+        <div class="box js col-12 col-sm-4">
+          <div class="pic pic3"></div>
+          <div class="middle">
+            <a href="https://aitsihamou.github.io/JS-training/" target="_blank">LivePreview</a>
           </div>
-          <!--/.col project -->
-          <!--/.col project -->
-          <div class="col-12 col-sm-6 col-md-4 mb-3">
-            <div class="project disabled">
-              <img src="img/featured/none.jpg" alt="bootstrap" class="image">
-              <div class="middle">
-                <div class="text">
-                  <a href="#"><i class="fa fa-external-link-square fa-5x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+        </div>
+        <div class="box sass bootstrap col-12  col-sm-4">
+          <div class="pic pic4"></div>
+          <div class="middle">
+            <a href="D:/FRONTEND/bootstrap/Preview2HtmlLv3-master/index.html" target="_blank">LivePreview</a>
           </div>
-          <!--/.col project -->
-          <!--/.col project -->
-          <div class="col-12 col-sm-6 col-md-4 mb-3">
-            <div class="project disabled">
-              <img src="img/featured/none.jpg" alt="bootstrap" class="image">
-              <div class="middle">
-                <div class="text">
-                  <a href="#"><i class="fa fa-external-link-square fa-5x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+        </div>
+        <div class="box col-12  col-sm-4 disabled">
+          <div class="pic pic5"></div>
+          <div class="middle">
+            <a href="#" target="_blank">LivePreview</a>
           </div>
-          <!--/.col project -->
-          <!--/.col project -->
-          <div class="col-12 col-sm-6 col-md-4 mb-3">
-            <div class="project disabled">
-              <img src="img/featured/none.jpg" alt="bootstrap" class="image">
-              <div class="middle">
-                <div class="text">
-                  <a href="#"><i class="fa fa-external-link-square fa-5x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+        </div>
+        <div class="box col-12  col-sm-4 disabled">
+          <div class="pic pic6"></div>
+          <div class="middle">
+            <a href="#" target="_blank">LivePreview</a>
           </div>
-          <!--/.col project -->
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!--/.end portfolio -->
+
+  <!--/.section contact -->
+  <section class="contact" id="touch">
+    <div class="container">
+      <div class="title">
+        <p>Get touch</p>
+      </div>
+      <div class="row my-4 d-flex align-items-center text-center">
+        <div class="col-12 col-sm-4 whatssap">
+          <a href="https://wa.me/+212615780793/?text=hello nourddine" target="_blank">
+            <i class="fa fa-whatsapp btn btn-outline-success " aria-hidden="true"></i>
+            <span>WHATSAPP</span>
+          </a>
+        </div>
+        <div class="col-12 col-sm-4 mobile">
+          <a href="tel:+1123-456-7890" target="_blank">
+            <i class="fa fa-phone btn btn-outline-info" aria-hidden="true"></i>
+            <span>CALL </span>
+          </a>
+        </div>
+        <div class="col-12 col-sm-4 mail">
+          <a href="mailto: nourddine.ash@gmail.com" target="_blank">
+            <i class="fa fa-envelope btn btn-outline-danger" aria-hidden="true"></i>
+            <span>GMAIL</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/.section contact -->
 
   <!--/.section footer -->
   <footer class="footer">
-    <div class="title">
-      <p>Thank you for visiting</p>
-    </div>
+    <!-- <div class="title">
+      <p>Thank you for visiting<a href="https://wa.me/+212615780793/?text=hello nourddine">msg</a></p>
+    </div> -->
     <div class="copyright p-1">
-      <p>nourddine.ash &copy; 2020</p>
+      <p>nourddine.ash &copy; 2022</p>
     </div>
   </footer>
   <!--/.end footer -->
-
 
   <!-- Bootstrap core JavaScript -->
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 
 </html>
