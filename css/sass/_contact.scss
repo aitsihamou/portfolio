@@ -1,0 +1,29 @@
+.contact {
+    margin-bottom: 50px;
+    .container {
+        .title {
+            font-size: 70px;
+            font-weight: 400;
+            font-family: cursive;
+            text-align: center;
+            color: $colorP;
+        }
+        .row {
+           a{
+               text-decoration: none;
+            i {
+                font-size: 60px;
+                padding: 20px;
+                border-radius: 50%;
+                border: none;
+            }
+            span{
+             display: block;
+                color: $colorP;
+                font-size: 20px;
+                font-weight: 500;
+            }
+           }
+        }
+    }
+}
