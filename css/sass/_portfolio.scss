@@ -37,7 +37,7 @@
             //margin: auto;
             padding: 10px;
             .pic {
-                background-image: url(/img/featured/none.jpg);
+                background-image: url('../../img/featured/none.jpg');
                 height: 350px;
                 background-color: #85ffbd;
                 background-size: cover;
@@ -49,16 +49,16 @@
                 }
             }
             .pic1 {
-                background-image: url(/img/featured/sass.jpg);
+                background-image: url('../../img/featured/sass.jpg');
             }
             .pic2 {
-                background-image: url(/img/featured/bootstrap4.jpg);
+                background-image: url('../../img/featured/bootstrap4.jpg');
             }
             .pic3 {
-                background-image: url(/img/featured/js.jpg);
+                background-image: url('../../img/featured/js.jpg');
             }
             .pic4 {
-                background-image: url(/img/featured/sass2.jpg);
+                background-image: url('../../img/featured/sass2.jpg');
             }
             .middle {
                 background-color: #fbab7e;

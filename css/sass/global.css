@@ -330,7 +330,7 @@
 }
 
 .portfolio .projects .box .pic {
-  background-image: url(/img/featured/none.jpg);
+  background-image: url("../../img/featured/none.jpg");
   height: 350px;
   background-color: #85ffbd;
   background-size: cover;
@@ -346,19 +346,19 @@
 }
 
 .portfolio .projects .box .pic1 {
-  background-image: url(/img/featured/sass.jpg);
+  background-image: url("../../img/featured/sass.jpg");
 }
 
 .portfolio .projects .box .pic2 {
-  background-image: url(/img/featured/bootstrap4.jpg);
+  background-image: url("../../img/featured/bootstrap4.jpg");
 }
 
 .portfolio .projects .box .pic3 {
-  background-image: url(/img/featured/js.jpg);
+  background-image: url("../../img/featured/js.jpg");
 }
 
 .portfolio .projects .box .pic4 {
-  background-image: url(/img/featured/sass2.jpg);
+  background-image: url("../../img/featured/sass2.jpg");
 }
 
 .portfolio .projects .box .middle {
