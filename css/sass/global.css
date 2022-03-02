@@ -64,14 +64,12 @@
 }
 
 .intro .title h1 {
-  font-family: cursive;
   font-size: 60px;
 }
 
 .intro .title P {
   font-size: 25px;
   color: white;
-  font-family: Courier New;
 }
 
 .about {
@@ -83,7 +81,6 @@
   font-weight: 400;
   padding: 15px;
   color: #F39530;
-  font-family: cursive;
   border-bottom: 5px solid #2A9D8F;
 }
 
@@ -300,7 +297,6 @@
 .portfolio .title {
   font-size: 70px;
   font-weight: 400;
-  font-family: cursive;
   text-align: center;
   color: white;
 }
@@ -391,7 +387,6 @@
 .contact .container .title {
   font-size: 70px;
   font-weight: 400;
-  font-family: cursive;
   text-align: center;
   color: #264653;
 }
@@ -421,7 +416,6 @@
 .footer .title p {
   color: #F39530;
   font-size: 50px;
-  font-family: cursive;
 }
 
 .footer .copyright {

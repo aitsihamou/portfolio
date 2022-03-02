@@ -6,7 +6,6 @@
             font-weight: 400;
             padding: 15px;
             color: $colorO;
-            font-family: cursive;
             border-bottom: 5px solid $colorS;
             
             i {
@@ -134,10 +133,6 @@
             @media #{$maxMobile} {
                 flex-direction: column-reverse;
                 margin-block: 40px;
-                .degr {
-                }
-                h3 {
-                }
             }
         }
         .skills {
