@@ -59,14 +59,11 @@
   }
 }
 
-.intro .title {
-  font-family: cursive;
-}
-
 .intro .title h1 {
   color: white;
   font-size: 100px;
   font-weight: 700;
+  font-family: cursive;
 }
 
 .intro .title P {
