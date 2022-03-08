@@ -19,6 +19,9 @@
             font-size: 100px;
             font-weight: 700;
             font-family: cursive;
+            @media #{$maxMobile} {
+                font-family: auto;
+            }
             
         }
         P {
