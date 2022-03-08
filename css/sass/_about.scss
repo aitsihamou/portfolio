@@ -6,8 +6,7 @@
             font-weight: 400;
             padding: 15px;
             color: $colorO;
-            border-bottom: 5px solid $colorS;
-            
+            font-family: cursive;
             i {
                 font-size: 50px;
             }
@@ -17,6 +16,7 @@
                 margin: auto;
                 font-size: 50px;
                 margin-bottom: 20px;
+                font-family: auto;
                 i {
                     display: none;
                 }
@@ -25,6 +25,7 @@
         @media #{$maxSmall} {
               h3 {
                 font-size: 30px;
+                
                 i {
                     font-size: 25px;
                     
@@ -92,12 +93,6 @@
             }
             @media #{$maxMobile} {
                 margin-block: 20px;
-                .me {
-                    .cardimg {
-                    }
-                    .links {
-                    }
-                }
             }
         }
         .education {
@@ -107,13 +102,12 @@
                 .grade {
                     .title {
                         background-color: #f1f1e6;
-                        margin-block: 5px;
+                        margin-block: 10px;
                         min-width: 350px;
                         border-radius: 30px;
                         i {
                             font-size: 30px;
                             color: white;
-                            margin-right: 10px;
                             border-radius: 50%;
                             padding: 10px;
                         }

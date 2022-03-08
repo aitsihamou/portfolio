@@ -11,6 +11,10 @@
         font-weight: 400;
         text-align: center;
         color: white;
+        font-family: cursive;
+        @media #{$maxMobile}{
+            font-family: auto;
+        }
     }
     .list {
         .list-item {

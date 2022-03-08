@@ -6,6 +6,10 @@
             font-weight: 400;
             text-align: center;
             color: $colorP;
+        font-family: cursive;
+        @media #{$maxMobile}{
+            font-family: auto;
+        }
         }
         .row {
            a{

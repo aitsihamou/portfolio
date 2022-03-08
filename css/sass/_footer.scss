@@ -1,15 +1,9 @@
 .footer {
     text-align: center;
-    .title {
-     p{
-        color: $colorO;
-        font-size: 50px; 
-     }
-    }
     .copyright {
         background-color: $colorP;
-        
         p {
+            font-size: 25px;
             color: white;
             padding: 5px;
             margin: 0px;
