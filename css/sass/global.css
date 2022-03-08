@@ -66,6 +66,12 @@
   font-family: cursive;
 }
 
+@media (max-width: 767px) {
+  .intro .title h1 {
+    font-family: auto;
+  }
+}
+
 .intro .title P {
   font-size: 40px;
   color: white;
