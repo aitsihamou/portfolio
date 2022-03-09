@@ -10,18 +10,17 @@
     }
 }
 .logo a {
-    border: 3px solid $colorO;
+    border: 5px solid $colorO;
     border-radius: 50%;
-    text-align: center;
+    background-color: white;
+    padding: 15px;
     &:hover {
-        border: 3px solid white;
-        i {
-            color: $colorO;
-        }
+        border: 5px solid white;
+        background-color: $colorO;
     }
 }
 .navbar-brand {
-    padding: 3px;
+    padding: 5px;
 }
 .navbar-collapse {
     float: right;

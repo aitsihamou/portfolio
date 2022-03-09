@@ -18,21 +18,19 @@
 }
 
 .logo a {
-  border: 3px solid #F39530;
+  border: 5px solid #F39530;
   border-radius: 50%;
-  text-align: center;
+  background-color: white;
+  padding: 15px;
 }
 
 .logo a:hover {
-  border: 3px solid white;
-}
-
-.logo a:hover i {
-  color: #F39530;
+  border: 5px solid white;
+  background-color: #F39530;
 }
 
 .navbar-brand {
-  padding: 3px;
+  padding: 5px;
 }
 
 .navbar-collapse {
@@ -66,15 +64,20 @@
   font-family: cursive;
 }
 
-@media (max-width: 767px) {
-  .intro .title h1 {
-    font-family: auto;
-  }
-}
-
 .intro .title P {
   font-size: 40px;
   color: white;
+}
+
+@media (max-width: 767px) {
+  .intro .title h1 {
+    font-size: 70px;
+    font-family: auto;
+  }
+  .intro .title p {
+    font-family: auto;
+    font-size: 30px;
+  }
 }
 
 .about {
@@ -170,14 +173,14 @@
 
 .about .container .iam .me .links ul li {
   display: inline-block;
-  padding: 8px;
+  padding: 10px;
   border-radius: 50%;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .about .container .iam .me .links ul li:hover {
   background-color: white !important;
-  padding: 6px;
+  padding: 8px;
   border: 2px solid #2A9D8F;
 }
 
