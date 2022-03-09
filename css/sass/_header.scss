@@ -5,28 +5,34 @@
         background-color: $colorO;
         border: 6px solid white;
         padding: 5px;
-        @media (max-width: 767px) {
+        height: 500px;
+        width: 500px;
+        @media #{$maxMobile} {
             height: 350px;
             width: 350px;
         }
-        height: 500px;
-        width: 500px;
     }
     .title {
-        
         h1 {
             color: white;
             font-size: 100px;
             font-weight: 700;
             font-family: cursive;
-            @media #{$maxMobile} {
-                font-family: auto;
-            }
-            
         }
         P {
             font-size: 40px;
             color: white;
+        }
+        @media #{$maxMobile} {
+            
+           h1{
+            font-size: 70px;
+            font-family: auto;
+           } 
+           p{
+            font-family: auto;
+               font-size: 30px;
+           }
         }
     }
 }

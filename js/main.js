@@ -7,3 +7,7 @@ $('.portfolio ul li').on('click', function () {
       $($(this).data('class')).css('display', '');
     }
   });
+
+  $(function () {
+      $('.intro').height($(window).height() - ( ($('.navbar').innerHeight())));
+  });

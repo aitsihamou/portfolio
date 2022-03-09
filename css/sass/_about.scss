@@ -72,12 +72,12 @@
                         margin-top: 5px;
                         li {
                             display: inline-block;
-                            padding: 8px;
+                            padding: 10px;
                             border-radius: 50%;
-                            margin-right: 5px;
+                            margin-right: 10px;
                             &:hover {
                                 background-color: white !important;
-                                padding: 6px;
+                                padding: 8px;
                                 border: 2px solid $colorS;
                                 i {
                                     color: $colorS !important;
